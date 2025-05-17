@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Resources - VibingSG</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, #7b2ff7, #f107a3);
+      color: white;
+      padding: 30px 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo span {
+      color: #66f0ff;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #7b2ff7;
+    }
+    .filters {
+      margin: 20px 0;
+    }
+    .filter-btn {
+      background: #eee;
+      border: none;
+      padding: 8px 16px;
+      margin: 5px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .filter-btn.active {
+      background: #7b2ff7;
+      color: white;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .video-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .video-thumb {
+      width: 100%;
+      height: 180px;
+      background: #ddd;
+      position: relative;
+    }
+    .video-thumb::after {
+      content: '\25B6';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2em;
+      color: white;
+      background: rgba(0,0,0,0.6);
+      padding: 10px;
+      border-radius: 50%;
+    }
+    .video-content {
+      padding: 15px;
+    }
+    .video-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .video-desc {
+      color: #555;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .watch-link {
+      color: #7b2ff7;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      background: linear-gradient(90deg, #7b2ff7, #f107a3);
+      color: white;
+      padding: 30px 20px;
+      font-size: 1em;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" style="font-size: 1.8em;">Vibing<span>SG</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="toolkits.html">Resources</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Video Resources</h2>
+    <p>Watch educational videos on stress management, study techniques, and motivation.</p>
+
+    
+
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-thumb" style="background-image: url('images/meditation.jpg'); background-size: cover;"></div>
+        <div class="video-content">
+          <div class="video-title">5-Minute Guided Meditation</div>
+          <div class="video-desc">Quick meditation to clear your mind before studying or exams.</div>
+          <div>1,200 views</div>
+          <a href="https://youtu.be/ssss7V1_eyA?si=UhyMH5vX8BO92n19" target="_blank" class="watch-link">Watch →</a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class=\"video-thumb\" style=\"background-image: url('https://img.youtube.com/vi/VQRjouwKDlU/0.jpg'); background-size: cover;\"></div>
+        <div class="video-content">
+          <div class="video-title">Effective Study Techniques</div>
+          <div class="video-desc">Learn how to study smarter, not harder.</div>
+          <div>3,500 views</div>
+          <a href="https://youtu.be/VQRjouwKDlU" target="_blank" class="watch-link">Watch →</a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class=\"video-thumb\" style=\"background-image: url('https://img.youtube.com/vi/hnpQrMqDoqE/0.jpg'); background-size: cover;\"></div>
+        <div class="video-content">
+          <div class="video-title">Overcoming Exam Anxiety</div>
+          <div class="video-desc">Tips from students who conquered test stress.</div>
+          <div>2,800 views</div>
+          <a href="https://youtu.be/hnpQrMqDoqE" target="_blank" class="watch-link">Watch →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>A mental wellness web application designed for Singaporean teenagers to manage academic stress through mood tracking, journaling, self-help resources, and educational content.</p>
+  </footer>
+</body>
+</html>
