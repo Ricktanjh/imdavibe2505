@@ -59,6 +59,41 @@
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
     }
+  .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .video-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+    .video-thumb {
+      width: 100%;
+      height: auto;
+    }
+    .video-content {
+      padding: 15px;
+    }
+    .video-title {
+      font-weight: bold;
+      color: #7b2ff7;
+      margin-bottom: 5px;
+    }
+    .video-desc {
+      color: #555;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .watch-link {
+      color: #7b2ff7;
+      font-weight: bold;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -66,71 +101,73 @@
     <div class="logo" style="font-size: 1.8em;">Vibing<span>SG</span></div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="toolkits.html">Resources</a>
+      <a href="toolkits1.html">Resources</a>
       <a href="#">About</a>
     </nav>
   </header>
 
   <main>
-    <h2>Self-help Toolkits</h2>
-    <p>Explore curated articles and tips to support your mental wellness and academic success.</p>
+  <h2>Self-help Toolkits</h2>
+  <p>Explore curated articles and tools to support your mental wellness and academic success.</p>
+  <div class="video-grid">
 
-    <div class="resource">
-         <h3 style="color:#7b2ff7;">Deep Breathing</h3>
-         <img src="images/Breathe2.png" alt="Breathe Stay Calm">
-  <ul style="padding-left: 20px;">
-      <ul style="padding-left: 20px;">
-
-      <ul style="padding-left: 20px;">
-        <a href="https://www.calm.com/breathe" target="_blank" style="color:#7b2ff7;">Deep Breathing</a>
-      </ul>
-    </div>
-    
-    <div class="resource">
-      <h3 style="color:#7b2ff7;">Pomodoro Counter</h3>
-      <ul style="padding-left: 20px;">
-        <a href="https://pomodorotimer.online/" target="_blank" style="color:#7b2ff7;">Pomodoro Timer - Online tool for focused study</a></li>
-      </ul>
+    <div class="video-card">
+      <img src="images/Breathe2.png" alt="Deep Breathing" class="video-thumb">
+      <div class="video-content">
+        <div class="video-title">Deep Breathing</div>
+        <div class="video-desc">Practice calm breathing exercises with this interactive tool from Calm.</div>
+        <a href="https://www.calm.com/breathe" target="_blank" class="watch-link">Explore →</a>
+      </div>
     </div>
 
-
-
-<div class="resource">
-  <h3 style="color:#7b2ff7;">Chat with a Bot</h3>
-  <ul style="padding-left: 20px;">
-    <a href="https://mindline.sg/youth/assessment?wysa-tool-id=default" target="_blank" style="color:#7b2ff7;">Mindline.sg - Chat with a wellbeing support bot</a></li>
-  </ul>
-</div>
-<div class="resource">
-  <h3 style="color:#7b2ff7;">Stress management</h3>
-  <ul style="padding-left: 20px;">
-    <li><a href="https://www.mindline.sg/youth/article/coping-with-stress?type=mood" target="_blank" style="color:#7b2ff7;">Coping with Stress (Mindline.sg)</a></li>
-    <li><a href="https://www.ncss.gov.sg/research-and-insights/community-resources/mental-well-being/for-youths" target="_blank" style="color:#7b2ff7;">Mental Well-being for Youths (NCSS)</a></li>
-    <li><a href="https://www.mindline.sg/youth/article/building-resilience-in-singapores-youth?type=interest" target="_blank" style="color:#7b2ff7;">Building Resilience (Mindline.sg)</a></li>
-  </ul>
+    <div class="video-card">
+      <img src="images/Timer.png" alt="Pomodoro Counter" class="video-thumb">
+      <div class="video-content">
+        <div class="video-title">Pomodoro Counter</div>
+        <div class="video-desc">Use the Pomodoro timer to boost your focus and productivity.</div>
+        <a href="https://pomodorotimer.online/" target="_blank" class="watch-link">Explore →</a>
+      </div>
     </div>
 
-   <div class="resource">
-  <h3 style="color:#7b2ff7;">Exam Preparation Tips</h3>
-  <ul style="padding-left: 20px;">
-    <li><a href="https://www.topuniversities.com/student-info/health-and-support/exam-preparation-ten-study-tips" target="_blank" style="color:#7b2ff7;">Exam Preparation: Ten Study Tips (Top Universities)</a></li>
-    <li><a href="https://blog.cambridgeinternational.org/tips-for-effective-exam-preparation/" target="_blank" style="color:#7b2ff7;">Tips for Effective Exam Preparation (Cambridge International)</a></li>
-    <li><a href="https://www.psb-academy.edu.sg/blog/study-tips-how-to-be-exam-ready" target="_blank" style="color:#7b2ff7;">Study Tips: How to be Exam-Ready (PSB Academy)</a></li>
-  </ul>
+    <div class="video-card">
+      <img src="images/Chatbot.png" alt="Chat with a Bot" class="video-thumb">
+      <div class="video-content">
+        <div class="video-title">Chat with a Bot</div>
+        <div class="video-desc">Have a confidential chat with a wellbeing bot to explore your emotions.</div>
+        <a href="https://mindline.sg/youth/assessment?wysa-tool-id=default" target="_blank" class="watch-link">Explore →</a>
+      </div>
     </div>
 
-    <div class="resource">
-      <h3 style="color:#7b2ff7;">Time Management Tips</h3>
-      <ul style="padding-left: 20px;">
-        <li><a href="https://www.skillsyouneed.com/ps/time-management.html" target="_blank" style="color:#7b2ff7;">Essential Time Management (Skills You Need)</a></li>
-        <li><a href="https://www.mindtools.com/pages/main/newMN_HTE.htm" target="_blank" style="color:#7b2ff7;">Time Management Tools (Mind Tools)</a></li>
-        <li><a href="https://todoist.com/productivity-methods/pomodoro-technique" target="_blank" style="color:#7b2ff7;">Pomodoro Technique (Todoist)</a></li>
-      </ul>
+    <div class="video-card">
+      <img src="images/StressMgmt.png" alt="Stress Management" class="video-thumb">
+      <div class="video-content">
+        <div class="video-title">Stress Management</div>
+        <div class="video-desc">Read practical strategies for managing stress from trusted local resources.</div>
+        <a href="https://www.mindline.sg/youth/article/coping-with-stress?type=mood" target="_blank" class="watch-link">Explore →</a>
+      </div>
     </div>
-    <!-- You can continue adding additional resources here -->
-  </main>
 
-  <footer>
+    <div class="video-card">
+      <img src="images/ExamTips.png" alt="Exam Preparation Tips" class="video-thumb">
+      <div class="video-content">
+        <div class="video-title">Exam Preparation Tips</div>
+        <div class="video-desc">Top strategies to study smart, reduce anxiety, and ace your exams.</div>
+        <a href="https://www.topuniversities.com/student-info/health-and-support/exam-preparation-ten-study-tips" target="_blank" class="watch-link">Explore →</a>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <img src="images/Time Management.png" alt="Time Management" class="video-thumb">
+      <div class="video-content">
+        <div class="video-title">Time Management Tips</div>
+        <div class="video-desc">Learn to organize your time better with proven productivity techniques.</div>
+        <a href="https://todoist.com/productivity-methods/pomodoro-technique" target="_blank" class="watch-link">Explore →</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+<footer>
     <p>A mental wellness web application designed for Singaporean teenagers to manage academic stress through mood tracking, journaling, self-help resources, and educational content.</p>
   </footer>
 </body>
