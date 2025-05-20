@@ -115,30 +115,13 @@
 
 
     <div class="log-mood-form">
-      <h2 class="section-title">Log Your Mood</h2>
+      <h2 class="section-title">Log Your Journal</h2>
       <p>How are you vibing today?</p>
-      <div class="moods">
-        <div class="mood" data-mood="Happy">Happy</div>
-        <div class="mood" data-mood="Calm">Calm</div>
-        <div class="mood" data-mood="Neutral">Neutral</div>
-        <div class="mood" data-mood="Anxious">Anxious</div>
-        <div class="mood" data-mood="Stressed">Stressed</div>
-      </div>
-
-      <p>How intense is this feeling? (1-5)</p>
-      <div class="intensity">
-        <button>1</button>
-        <button>2</button>
-        <button class="active">3</button>
-        <button>4</button>
-        <button>5</button>
-      </div>
-
-      <p>What triggered this feeling?</p>
+    
       <textarea placeholder="Describe what's happening in your day..."></textarea>
 
       <div style="text-align: center;">
-        <button class="save-mood">Save Mood Entry</button>
+        <button class="save-mood">Save Journal Entry</button>
       </div>
     </div>
 
@@ -160,44 +143,6 @@
   </p>
 </footer>
 
-  <script>
-    const ctx = document.getElementById('moodChart').getContext('2d');
-    const moodChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-        datasets: [{
-          label: 'Mood Intensity',
-          data: [2, 4, 3, 5, 4, 5, 2],
-          backgroundColor: 'rgba(123, 47, 247, 0.2)',
-          borderColor: '#7b2ff7',
-          borderWidth: 2,
-          pointBackgroundColor: '#f107a3',
-          tension: 0.4
-        }]
-      },
-      options: {
-        scales: {
-          y: { beginAtZero: true, suggestedMax: 5 }
-        }
-      }
-    });
-
-    const moods = document.querySelectorAll('.mood');
-    moods.forEach(mood => {
-      mood.addEventListener('click', () => {
-        moods.forEach(m => m.classList.remove('active'));
-        mood.classList.add('active');
-      });
-    });
-
-    const intensityBtns = document.querySelectorAll('.intensity button');
-    intensityBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        intensityBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
-  </script>
+  
 </body>
 </html>
